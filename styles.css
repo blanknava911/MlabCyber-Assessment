@@ -1,0 +1,79 @@
+body {
+  background-color: rgb()
+  font-family: sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-font-smoothing: auto;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: auto;
+  text-rendering: optimizeLegibility;
+  font-smooth: always;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+header{
+background-color: #d1e7dd;
+height: 30px;
+}
+.NO0{
+  background-color: #d1e7;
+  height: 200px;
+  margin-bottom: 20px;
+}
+.bearer1{
+  display: flex;
+  
+}
+.bearer2{
+  display: flex;
+  
+}
+
+.NO1{
+  border: 1px, solid, #f1e;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  
+  
+}
+.NO2{
+  border: 1px,solid, #f1e;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+.NO3{
+  border: 1px, solid, #f1e;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+.NO4{
+  border: 1px, solid,  #f1e;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+.NO5{
+  border: 1px, solid, #f1e;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+.NO6{
+  border: 1px, solid, #f1e;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+.NO7{
+  border: 1px, solid, #f1e;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+.attribution{
+  background-color: #d1e;
+  height: 100px;
+}
+

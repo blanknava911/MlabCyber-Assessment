@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+  (function() {
+    const orig = { ...console };
+    ['log', 'warn', 'error', 'info'].forEach(m => {
+      console[m] = (...args) => {
+        orig[m](...args);
+        try { window.parent.postMessage({ source: 'preview-console', blockId: 'b-1785825572211-kw2t', m, p: args.map(a => typeof a === 'object' ? JSON.stringify(a) : String(a)).join(' ') }, '*'); } catch(e) {}
+      };
+    });
+    window.addEventListener('error', e => window.parent.postMessage({ source: 'preview-console', blockId: 'b-1785825572211-kw2t', m: 'error', p: e.message }, '*'));
+  })();
+</script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet"  href="styles.css">
+  <title>Frontend Mentor | Cyber saftety awareness</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header style="background-color: grey;">
+    Introduction to cyber saftey awareness
+  </header>
+  <div class="NO0">
+    <p>Wlcome to the cyber safety training awareness course here you will learn how to spot cybe crime and help your self and your collegues to avoid being victims. we will start with basics: Creating a Strong Password
+      - Creating a strong password helps delay hacker from getting access to your account. when creating a password make sure that rather than creating a short complicated password like pass&%$*()@# it is more safer the create one like HamCheeseBaconSandwhichCreamCoffee. Creating a long passwords makes it harder to crack. 
+    </p>
+   
+  </div>
+  
+
+  <div class="bearer1">
+    <div class="NO7" a href="hacks.html">
+      Multi factor Authication
+    </div>
+    <div class="NO2" a href="hacks.html">
+     Recognising Phishing Scams
+    </div>
+
+    <div class="NO3" a href="hacks.html">
+     Safe online banking
+    </div>
+  </div>
+  <div class="bearer2">
+    <div class="NO4">
+      Protecting Personal Information
+    </div>
+    <div class="NO5">
+      Safe use of Public Wifi
+    </div>
+    <div class="NO6"> 
+    Reporting Suspicious Activity
+    </div>
+  </div>
+
+<footer>
+  <div class="attribution">
+    Cyber safety awareness Website by Zindela Fintech Company 
+    Developed by Blanc Nava
+  </div>
+</footer>
+</body>
+
+
+</html>
+
+
+<!-- Source Frontend Mentor: https://www.frontendmentor.io -->
